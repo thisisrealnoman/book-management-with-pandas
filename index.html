@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign In - Tailwind</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet" type="text/css" />
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="w-full max-w-4xl mx-auto shadow-xl bg-white rounded-lg flex overflow-hidden">
+        <!-- Left Image Section -->
+        <div class="hidden md:flex w-1/2 bg-cover" style="background-image: url('images/signup-image.jpg');"></div>
+
+        <!-- Form Section -->
+        <div class="w-full md:w-1/2 p-8">
+            <h2 class="text-3xl font-bold text-gray-800 text-center mb-6">Sign In</h2>
+
+            <!-- Sign-in Form -->
+            <form class="space-y-4" method="POST" action="#">
+                <!-- Name Field -->
+                <div class="form-control">
+                    <label for="Username" class="label">
+                        <span class="label-text font-semibold">Username</span>
+                    </label>
+                    <input type="text" id="Username" name="Username" placeholder="Username"
+                        class="input input-bordered w-full" required />
+                </div>
+
+                <!-- Password Field -->
+                <div class="form-control">
+                    <label for="your_pass" class="label">
+                        <span class="label-text font-semibold">Password</span>
+                    </label>
+                    <input type="password" id="your_pass" name="your_pass" placeholder="Password"
+                        class="input input-bordered w-full" required />
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-control">
+                    <button type="submit" class="btn bg-blue-500 w-full mt-6">Log in</button>
+                </div>
+            </form>
+
+            <!-- Social Login -->
+            <div class="mt-6 text-center">
+                <span class="text-gray-500">Or login with</span>
+                <div class="flex justify-center gap-4 mt-4">
+                    <a href="#" class="btn btn-circle btn-outline btn-primary"><i class="zmdi zmdi-facebook"></i></a>
+                    <a href="#" class="btn btn-circle btn-outline btn-accent"><i class="zmdi zmdi-twitter"></i></a>
+                    <a href="#" class="btn btn-circle btn-outline btn-error"><i class="zmdi zmdi-google"></i></a>
+                </div>
+            </div>
+
+            <!-- Sign Up Link -->
+            <p class="text-sm text-gray-500 text-center mt-6">
+                Don't have an account? <a href="#" class="text-primary font-semibold">Create an account</a>
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
